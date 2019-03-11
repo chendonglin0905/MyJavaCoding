@@ -5,7 +5,7 @@ package com.chensr;
  * <b>创建日期：</b> 2019/3/9
  * </p>
  *
- * @author chendonglin@daojia-inc.com
+ * @author
  * @since 1.0.0-SNAPSHOT
  */
 public interface Node<T> {
