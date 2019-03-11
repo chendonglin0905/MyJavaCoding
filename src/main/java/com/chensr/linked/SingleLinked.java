@@ -41,7 +41,6 @@ public class SingleLinked<T> implements List<T> {
         if (head == null) {
             head = singleLinkedNode;
             tail = singleLinkedNode;
-            // if element size 1
         } else {
             tail.setNext(singleLinkedNode);
             tail = singleLinkedNode;
