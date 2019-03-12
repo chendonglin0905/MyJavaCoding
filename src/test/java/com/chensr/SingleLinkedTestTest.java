@@ -4,7 +4,10 @@ import com.chensr.linked.SingleLinked;
 import com.chensr.linked.SingleLinkedNodeImpl;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 public class SingleLinkedTestTest {
 
@@ -25,10 +28,32 @@ public class SingleLinkedTestTest {
         linked.add(node_4);
         linked.add(node_5);
         linked.add(node_6);
-        Iterator iterator = linked.iterator();
+        Iterator<Node<String>> iterator = linked.iterator();
         while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+            Node node = iterator.next();
+            System.out.println(node.getSource());
         }
+    }
+
+    @Test
+    public void restRemove(){
+        ArrayList<String> list = new ArrayList<>();
+        list.add("test");
+        list.add("test");
+        list.add("test1");
+        list.add("2");
+        list.add("test3");
+        Iterator<String> iterator = list.iterator();
+        Map<String,String> flagMap = new HashMap<>();
+        while (iterator.hasNext()){
+            String str = iterator.next();
+            if (flagMap.containsKey(str)) {
+                iterator.remove();
+            } else {
+                flagMap.put(str, str);
+            }
+        }
+        System.out.println(list.size());
     }
 
 }
