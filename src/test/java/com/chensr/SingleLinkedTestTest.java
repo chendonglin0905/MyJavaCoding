@@ -56,4 +56,15 @@ public class SingleLinkedTestTest {
         System.out.println(list.size());
     }
 
+    @Test
+    public void testString(){
+
+        String test = "test";
+
+        test.toUpperCase();
+
+
+    }
+
+
 }
