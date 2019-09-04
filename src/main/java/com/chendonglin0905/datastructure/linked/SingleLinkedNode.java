@@ -1,6 +1,4 @@
-package com.chensr.linked;
-
-import com.chensr.Node;
+package com.chendonglin0905.datastructure.linked;
 
 /**
  * <p>

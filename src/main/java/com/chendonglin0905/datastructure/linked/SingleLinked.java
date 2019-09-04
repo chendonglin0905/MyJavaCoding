@@ -1,7 +1,4 @@
-package com.chensr.linked;
-
-import com.chensr.List;
-import com.chensr.Node;
+package com.chendonglin0905.datastructure.linked;
 
 import java.util.Iterator;
 

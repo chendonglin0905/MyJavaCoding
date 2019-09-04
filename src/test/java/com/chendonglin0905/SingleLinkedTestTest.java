@@ -1,7 +1,8 @@
-package com.chensr;
+package com.chendonglin0905;
 
-import com.chensr.linked.SingleLinked;
-import com.chensr.linked.SingleLinkedNodeImpl;
+import com.chendonglin0905.datastructure.linked.Node;
+import com.chendonglin0905.datastructure.linked.SingleLinked;
+import com.chendonglin0905.datastructure.linked.SingleLinkedNodeImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;

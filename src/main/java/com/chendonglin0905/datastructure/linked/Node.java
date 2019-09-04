@@ -1,4 +1,4 @@
-package com.chensr;
+package com.chendonglin0905.datastructure.linked;
 
 /**
  * <p>
