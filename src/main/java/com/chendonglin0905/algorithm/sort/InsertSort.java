@@ -41,7 +41,7 @@ public class InsertSort extends AbstractSort {
                 array[j+1] = array[j];
                 j--;
             }
-
+            // 插入
             array[j+1] = that;
         }
     }
