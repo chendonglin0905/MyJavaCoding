@@ -1,4 +1,4 @@
-package com.chendonglin0905.jvmtest;
+package com.chendonglin0905.jvm;
 
 /**
  * <p>
