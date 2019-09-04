@@ -26,6 +26,7 @@ public class SingleLinked<T> implements List<T> {
         this.head = null;
     }
 
+    @Override
     public void add(Node<T> node) {
         if (node == null) {
             throw new RuntimeException("Node can't null");
@@ -45,8 +46,10 @@ public class SingleLinked<T> implements List<T> {
         size++;
     }
 
+    @Override
     public Iterator<Node<T>> iterator() {
         return new Iterator<Node<T>>() {
+            @Override
             public boolean hasNext() {
                 if (next == null) {
                     next = new SingleLinkedNodeImpl<T>(null);
@@ -55,11 +58,13 @@ public class SingleLinked<T> implements List<T> {
                 return next.next() != null;
             }
 
+            @Override
             public Node<T> next() {
                 next = next.next();
                 return next;
             }
 
+            @Override
             public void remove() {
             }
         };

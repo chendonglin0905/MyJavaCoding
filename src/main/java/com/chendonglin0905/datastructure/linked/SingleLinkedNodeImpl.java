@@ -18,22 +18,27 @@ public class SingleLinkedNodeImpl<T> implements SingleLinkedNode<T> {
         this.t = t;
     }
 
+    @Override
     public SingleLinkedNode<T> next() {
         return next;
     }
 
+    @Override
     public T getSource() {
         return t;
     }
 
+    @Override
     public Class getSourceClass() {
         return t.getClass();
     }
 
+    @Override
     public boolean isNull() {
         return t == null;
     }
 
+    @Override
     public void setNext(SingleLinkedNode<T> next) {
         this.next = next;
     }
