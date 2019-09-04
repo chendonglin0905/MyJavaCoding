@@ -15,8 +15,34 @@ public class InsertSort extends AbstractSort {
         super(array);
     }
 
+    /**
+     * 1、确定起始位置，2、找位置，3、插入数据
+     *
+     * @param array
+     */
     @Override
     protected void sort(int[] array) {
+        // 确定起始位置为1
+        for (int index = 1; index < array.length; index++) {
+            // 当前数据
+            int that = array[index];
+            //
+//            for (int i = index - 1; i >= 0; i--) {
+//                if (that < array[i]) {
+//                    array[i + 1] = array[i];
+//                } else {
+//                    array[i+1] = that;
+//                    break;
+//                }
+//            }
+            // 找位置，主要是元素搬移
+            int j = index-1;
+            while (that < array[j] && j > 0) {
+                array[j+1] = array[j];
+                j--;
+            }
 
+            array[j+1] = that;
+        }
     }
 }
