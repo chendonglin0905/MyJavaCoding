@@ -21,11 +21,11 @@ public class SelectSort extends AbstractSort {
      */
     @Override
     protected void sort(int[] array) {
-        int minIndex = 0;
         for (int index = 0; index < array.length; index++) {
+            int minIndex = index;
             int tmp = array[index];
             int j = index + 1;
-            // find min element index
+            // find min element location
             while (j < array.length) {
                 if (tmp > array[j]) {
                     minIndex = j;
