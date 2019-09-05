@@ -2,6 +2,7 @@ package com.chendonglin0905;
 
 import com.chendonglin0905.algorithm.sort.AbstractSort;
 import com.chendonglin0905.algorithm.sort.InsertSort;
+import com.chendonglin0905.algorithm.sort.SelectSort;
 import org.junit.Test;
 
 /**
@@ -20,7 +21,13 @@ public class SortTest {
     @Test
     public void testInsertSort() {
         AbstractSort sort = new InsertSort(TEST_ARR);
-        sort.sort();
+        sort.execSort();
+    }
+
+    @Test
+    public void testSelectSort() {
+        AbstractSort sort = new SelectSort(TEST_ARR);
+        sort.execSort();
     }
 
 

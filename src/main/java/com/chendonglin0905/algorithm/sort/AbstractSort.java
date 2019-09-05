@@ -16,16 +16,33 @@ public abstract class AbstractSort {
         this.array = array;
     }
 
-
+    /**
+     * 排序
+     *
+     * @param array 待排序数组
+     */
     protected abstract void sort(int[] array);
 
-
-    public void sort() {
+    /**
+     * 排序启动入口
+     */
+    public void execSort() {
         sort(this.array);
-        System.out.println("Console out!!!!");
         for (int i : array) {
-            System.out.print(i + ",");
+            System.out.println(i);
         }
-        System.out.println("Console ending!!!!");
+    }
+
+    /**
+     * 不用临时变量交换两个int 变量
+     *
+     * @param array 数组
+     * @param i     索引i
+     * @param j     索引j
+     */
+    protected void swap(int[] array, int i, int j) {
+        int sum = array[i] + array[j];
+        array[i] = sum - array[i];
+        array[j] = sum - array[j];
     }
 }
