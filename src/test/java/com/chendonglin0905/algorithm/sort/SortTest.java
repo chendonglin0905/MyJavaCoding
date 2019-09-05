@@ -1,8 +1,5 @@
-package com.chendonglin0905;
+package com.chendonglin0905.algorithm.sort;
 
-import com.chendonglin0905.algorithm.sort.AbstractSort;
-import com.chendonglin0905.algorithm.sort.InsertSort;
-import com.chendonglin0905.algorithm.sort.SelectSort;
 import org.junit.Test;
 
 /**

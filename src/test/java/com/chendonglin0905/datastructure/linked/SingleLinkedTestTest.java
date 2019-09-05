@@ -1,8 +1,5 @@
-package com.chendonglin0905;
+package com.chendonglin0905.datastructure.linked;
 
-import com.chendonglin0905.datastructure.linked.Node;
-import com.chendonglin0905.datastructure.linked.SingleLinked;
-import com.chendonglin0905.datastructure.linked.SingleLinkedNodeImpl;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -37,7 +34,7 @@ public class SingleLinkedTestTest {
     }
 
     @Test
-    public void restRemove(){
+    public void restRemove() {
         ArrayList<String> list = new ArrayList<>();
         list.add("test");
         list.add("test");
@@ -45,8 +42,8 @@ public class SingleLinkedTestTest {
         list.add("2");
         list.add("test3");
         Iterator<String> iterator = list.iterator();
-        Map<String,String> flagMap = new HashMap<>();
-        while (iterator.hasNext()){
+        Map<String, String> flagMap = new HashMap<>();
+        while (iterator.hasNext()) {
             String str = iterator.next();
             if (flagMap.containsKey(str)) {
                 iterator.remove();
@@ -58,7 +55,7 @@ public class SingleLinkedTestTest {
     }
 
     @Test
-    public void testString(){
+    public void testString() {
 
         String test = "test";
 
