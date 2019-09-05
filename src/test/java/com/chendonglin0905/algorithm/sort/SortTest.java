@@ -27,5 +27,11 @@ public class SortTest {
         sort.execSort();
     }
 
+    @Test
+    public void testBubbleSort() {
+        AbstractSort sort = new BubbleSort(TEST_ARR);
+        sort.execSort();
+    }
+
 
 }
