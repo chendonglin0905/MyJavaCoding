@@ -33,5 +33,10 @@ public class SortTest {
         sort.execSort();
     }
 
+    @Test
+    public void testQuickSort() {
+        AbstractSort sort = new QuickSort(TEST_ARR);
+        sort.execSort();
+    }
 
 }
