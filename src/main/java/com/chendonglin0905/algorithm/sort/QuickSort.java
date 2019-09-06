@@ -45,7 +45,7 @@ public class QuickSort extends AbstractSort {
         }
 
         this.partition(array, begin, middleIndex);
-        this.partition(array, middleIndex+1, end);
+        this.partition(array, middleIndex + 1, end);
     }
 
 

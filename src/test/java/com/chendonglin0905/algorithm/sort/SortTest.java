@@ -13,7 +13,7 @@ import org.junit.Test;
 public class SortTest {
 
 
-    private static final int[] TEST_ARR = new int[]{0, 3, 1, 2, 9, 8, 7, 5, 2};
+    private static final int[] TEST_ARR = new int[]{0, 3, 1, 2, 9, 8, 7, 5, 2,-1,100};
 
     @Test
     public void testInsertSort() {
